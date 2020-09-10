@@ -3,9 +3,31 @@ header {
 }
 
 main {
-    
+    background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Denne delen skal, selvfølgelig, ikke dekke hele siden høyre-venstre */
+    justify-content: center;
 }
 
 form {
+    background-color: snow;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Denne skal være en boks med litt av det lyseblå på begge sider */
+}
 
+form div {
+    padding: 10px;
+}
+
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 25px;
 }
