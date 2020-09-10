@@ -6,7 +6,8 @@ main {
     background-color: lightblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* Denne delen skal, selvfølgelig, ikke dekke hele siden høyre-venstre */
-    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 form {
