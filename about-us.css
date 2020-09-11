@@ -1,0 +1,39 @@
+body {
+    background-color: lightsteelblue;
+}
+
+header {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header a {
+    padding-right: 5px;
+    color: darkblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+}
+
+header img {
+    background-color: whitesmoke;
+    border: none;
+}
+
+main {
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Denne delen skal, selvfølgelig, ikke dekke hele siden høyre-venstre */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 73px;
+}
