@@ -1,12 +1,17 @@
+body {
+    background-color: lightgray;
+}
+
 header {
-    background-color: blue;
+    background-color: lightblue;
     color: white;
     display: grid;
     grid-template-columns: auto;
+    align-items: center;
 }
 
 header a {
-    padding: 5px;
+    padding-right: 5px;
     border: white 0.5px solid;
     color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,4 +20,13 @@ header a {
 
 header img {
     background-color: whitesmoke;
+    border: none;
+}
+
+main {
+    background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Denne delen skal, selvfølgelig, ikke dekke hele siden høyre-venstre */
+    margin-left: 20%;
+    margin-right: 20%;
 }

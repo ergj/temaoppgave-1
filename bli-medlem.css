@@ -1,5 +1,22 @@
 header {
+    background-color: lightblue;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
 
+header a {
+    padding-right: 5px;
+    border: white 0.5px solid;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+header img {
+    background-color: whitesmoke;
+    border: none;
 }
 
 main {
@@ -17,8 +34,18 @@ form {
     /* Denne skal være en boks med litt av det lyseblå på begge sider */
 }
 
+
+input[type=radio]:checked + label {
+    background-color: lightblue;
+    color: whitesmoke;
+}
+
 form div {
     padding: 10px;
+}
+
+article {
+    padding-left: 10px;
 }
 
 h1, h2 {
