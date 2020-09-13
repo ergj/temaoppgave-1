@@ -45,6 +45,68 @@ header img {
     color: rgb(87, 137, 201);
 }
 
+#cb {
+    position: absolute;
+    left: 100px;
+    display: none;
+}
+
+#burger {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    grid-template-rows: 5px 5px 5px;
+    align-content: space-between;
+    cursor: pointer;
+
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 2;
+}
+
+#burger div {
+    background-color: rgb(47, 47, 180);
+}
+
+#meny {
+    background-color: whitesmoke;
+    height: 200%;
+    width: fit-content;
+    display: grid;
+    justify-items: right;
+    align-content: space-between;
+    position: absolute;
+    right: 100vw;
+    top: 30px;
+    z-index: 1;
+    border: solid rgb(47, 47, 180) 1px;
+    border-radius: 10%;
+}
+
+#meny a {
+    text-decoration: none;
+    color: rgb(47, 47, 180);
+    font-weight: 700;
+}
+
+#cb:checked ~ #meny {
+    right: 60px;
+    background-color: whitesmoke;
+}
+
+#cb:checked ~ #burger div:first-child {
+    transform: translateY(14px) rotate(45deg);
+}
+
+#cb:checked ~ #burger div:nth-child(2) {
+    transform: translateX(400px)
+}
+
+#cb:checked ~ #burger div:last-child {
+    transform: translateY(-14px) rotate(-45deg);
+}
+
 main {
     background-color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
