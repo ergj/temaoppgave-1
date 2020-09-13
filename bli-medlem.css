@@ -17,7 +17,7 @@ header {
 header nav {
     padding: 8px;
     margin-right: 10px;
-    color: darkblue;
+    color: rgb(47, 47, 180);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: 800;
@@ -28,11 +28,11 @@ header nav {
 a {
     text-decoration: none;
     color: inherit;
+    align-content: space-around
 }
 
 a:hover {
-    color: lightsteelblue;
-    background-color: darkblue;
+    color: rgb(87, 137, 201);
     cursor: pointer;
 }
 
@@ -42,8 +42,7 @@ header img {
 }
 
 .selected {
-    background-color: darkblue;
-    color: lightsteelblue;
+    color: rgb(87, 137, 201);
 }
 
 main {

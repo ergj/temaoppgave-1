@@ -17,7 +17,7 @@ header {
 header nav {
     padding: 8px;
     margin-right: 10px;
-    color: darkblue;
+    color: rgb(47, 47, 180);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: 800;
@@ -28,11 +28,11 @@ header nav {
 a {
     text-decoration: none;
     color: inherit;
+    align-content: space-around
 }
 
 a:hover {
-    color: lightsteelblue;
-    background-color: darkblue;
+    color: rgb(87, 137, 201);
     cursor: pointer;
 }
 
@@ -42,8 +42,60 @@ header img {
 }
 
 .selected {
-    background-color: darkblue;
-    color: lightsteelblue;
+    color: rgb(87, 137, 201);
+}
+
+#cb {
+    position: absolute;
+    left: 100px;
+    display: none;
+}
+
+#burger {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    grid-template-rows: 5px 5px 5px;
+    align-content: space-between;
+    cursor: pointer;
+
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 2;
+}
+
+#burger div {
+    background-color: rgb(47, 47, 180);
+}
+
+#meny {
+    background-color: whitesmoke;
+    height: 200%;
+    width: fit-content;
+    display: grid;
+    justify-items: right;
+    align-content: space-between;
+    position: absolute;
+    right: 100vw;
+    top: 30px;
+    z-index: 1;
+    transition: 0.5s ;
+}
+
+#meny a {
+    text-decoration: none;
+    color: rgb(47, 47, 180);
+    font-weight: 700;
+}
+
+#cb:checked ~ #meny {
+    right: 60px;
+    background-color: whitesmoke;
+}
+
+#cb:checked ~ #burger {
+    
 }
 
 main {
