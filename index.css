@@ -114,16 +114,22 @@ header img {
 main {
     background-color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: whitesmoke solid 0.25px;
+    border-radius: 0.5%;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 120px;
 }
 
-h1 {
+#main-article {
+    border: rgb(87, 137, 201) solid 1px;
+}
+
+#se-bildene {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: darkblue;
-    font-size: 50px;
+    font-size: 25px;
     text-decoration: none;
 }
 
@@ -155,4 +161,30 @@ h1:hover {
     flex: 3;
     transform: scale(1.2);
     z-index: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid rgb(87, 137, 201);
+}
+
+.container img {
+    height: 200px;
+    align-content: center;
+}
+
+footer {
+    background-color: rgb(47, 47, 180);
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.container-footer {
+    display: grid;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-template-rows: auto;
 }
