@@ -74,14 +74,14 @@ header img {
     height: 200%;
     width: fit-content;
     display: grid;
-    justify-items: right;
+    justify-items: left;
     align-content: space-between;
     position: absolute;
     right: 100vw;
     top: 30px;
     z-index: 1;
     border: solid rgb(47, 47, 180) 1px;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 #meny a {
@@ -90,8 +90,12 @@ header img {
     font-weight: 700;
 }
 
+#meny a:hover {
+    color: rgb(87, 137, 201);
+}
+
 #cb:checked ~ #meny {
-    right: 60px;
+    right: 25px;
     background-color: whitesmoke;
 }
 
