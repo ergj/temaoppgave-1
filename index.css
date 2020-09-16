@@ -1,114 +1,8 @@
 body {
     background-color: lightsteelblue;
-}
-
-header {
-    background-color: whitesmoke;
-    display: grid;
-    grid-template-columns: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    text-align: left;
-}
-
-header nav {
-    padding: 8px;
-    margin-right: 10px;
-    color: rgb(47, 47, 180);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-    text-decoration: none;
-    justify-items: center;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    align-content: space-around
-}
-
-a:hover {
-    color: rgb(87, 137, 201);
-    cursor: pointer;
-}
-
-header img {
-    background-color: whitesmoke;
-    border: none;
-}
-
-.selected {
-    color: rgb(87, 137, 201);
-}
-
-#cb {
-    position: absolute;
-    left: 100px;
-    display: none;
-}
-
-#burger {
-    width: 32px;
-    height: 32px;
-    display: grid;
-    grid-template-rows: 5px 5px 5px;
-    align-content: space-between;
-    cursor: pointer;
-
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    z-index: 2;
-}
-
-#burger div {
-    background-color: rgb(47, 47, 180);
-}
-
-#meny {
-    background-color: whitesmoke;
-    height: 200%;
-    width: fit-content;
-    display: grid;
-    justify-items: left;
-    align-content: space-between;
-    position: absolute;
-    right: 100vw;
-    top: 30px;
-    z-index: 1;
-    border: solid rgb(47, 47, 180) 1px;
-    border-radius: 5%;
-}
-
-#meny a {
-    text-decoration: none;
-    color: rgb(47, 47, 180);
-    font-weight: 700;
-}
-
-#meny a:hover {
-    color: rgb(87, 137, 201);
-}
-
-#cb:checked ~ #meny {
-    right: 25px;
-    background-color: whitesmoke;
-}
-
-#cb:checked ~ #burger div:first-child {
-    transform: translateY(14px) rotate(45deg);
-}
-
-#cb:checked ~ #burger div:nth-child(2) {
-    transform: translateX(400px)
-}
-
-#cb:checked ~ #burger div:last-child {
-    transform: translateY(-14px) rotate(-45deg);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -118,6 +12,8 @@ main {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 120px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 #main-article {
@@ -127,7 +23,7 @@ main {
 #se-bildene {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: darkblue;
+    color: rgb(47, 47, 180);
     font-size: 25px;
     text-decoration: none;
 }
@@ -163,28 +59,71 @@ h1:hover {
 }
 
 .container {
+    position: relative;
+    height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid rgb(87, 137, 201);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.politikk, .medlem, .erna {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgb(87, 137, 201) solid 1px;
 }
 
 .container img {
     height: 200px;
-    align-content: center;
+    width: 100%;
+    object-fit: cover;
+    border: rgb(87, 137, 201) solid 1px;
 }
 
-footer {
-    background-color: rgb(47, 47, 180);
-    color: whitesmoke;
-    display: grid;
-    grid-template-columns: auto;
-    padding: 10px;
+.politikk-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 16px;
+    color: rgb(47, 47, 180);
+    background-image: linear-gradient(transparent, transparent 60%, whitesmoke);
+    overflow: hidden;
 }
 
-.container-footer {
-    display: grid;
-    font-size: 25px;
-    font-weight: 700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    grid-template-rows: auto;
+.medlem-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 16px;
+    color: rgb(47, 47, 180);
+    background-image: linear-gradient(transparent, transparent 60%, whitesmoke);
+}
+
+.erna-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 16px;
+    color: rgb(47, 47, 180);
+    background-image: linear-gradient(transparent, transparent 60%, whitesmoke);
 }
