@@ -58,7 +58,7 @@ h1:hover {
     z-index: 1;
 }
 
-.container {
+.sub-articles {
     position: relative;
     height: 200px;
     display: grid;
@@ -69,32 +69,30 @@ h1:hover {
 
 .politikk, .medlem, .erna {
     position: relative;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: rgb(87, 137, 201) solid 1px;
 }
 
-.container img {
+.sub-articles img {
     height: 200px;
     width: 100%;
     object-fit: cover;
-    border: rgb(87, 137, 201) solid 1px;
 }
 
 .politikk-overlay {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 10px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 16px;
+    padding: 10px;
     color: rgb(47, 47, 180);
-    background-image: linear-gradient(transparent, transparent 60%, whitesmoke);
+    background-image: linear-gradient(transparent, transparent 40%, whitesmoke);
     overflow: hidden;
 }
 
@@ -102,28 +100,33 @@ h1:hover {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 10px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 16px;
+    padding: 10px;
     color: rgb(47, 47, 180);
-    background-image: linear-gradient(transparent, transparent 60%, whitesmoke);
+    background-image: linear-gradient(transparent, transparent 40%, whitesmoke);
+    overflow: hidden;
 }
 
 .erna-overlay {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 10px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 16px;
+    padding: 10px;
     color: rgb(47, 47, 180);
-    background-image: linear-gradient(transparent, transparent 60%, whitesmoke);
+    background-image: linear-gradient(transparent, transparent 40%, whitesmoke);
+    overflow: hidden;
+}
+
+.politikk-overlay:hover, .medlem-overlay:hover, .erna-overlay:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
