@@ -44,6 +44,10 @@ input[type=button] {
     color: whitesmoke;
 }
 
+input[type=button]:hover {
+    cursor: pointer;
+}
+
 form div {
     padding: 10px;
 }
