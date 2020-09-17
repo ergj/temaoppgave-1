@@ -19,7 +19,7 @@ header nav {
     margin-right: 0.625rem;
     color: rgb(47, 47, 180);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 800;
     text-decoration: none;
     justify-items: center;
@@ -52,8 +52,8 @@ header img {
 }
 
 #burger {
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     display: grid;
     grid-template-rows: 0.32rem 0.32rem 0.32rem;
     align-content: space-between;

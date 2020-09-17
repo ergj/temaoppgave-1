@@ -12,14 +12,15 @@ footer {
     margin-right: 0;
     position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    align-items: center;
 }
 
 .footer-content {
     display: flex;
 }
 
-.footer-info, .footer-meny, .footer-socials {
+.footer-logo, .footer-info, .footer-meny, .footer-socials {
     flex: 1;
     padding: 0.6rem;
     object-fit: fill;

@@ -77,13 +77,14 @@ h1:hover {
     align-items: center;
     justify-content: center;
     background-color: white;
+    border: rgb(87, 137, 201) solid 1px;
 }
 
 .sub-articles img {
     height: 12.5rem;
     width: 100%;
     object-fit: cover;
-    background-color: whiteS;
+    background-color: white;
 }
 
 .politikk-overlay {
