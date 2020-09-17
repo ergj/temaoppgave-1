@@ -1,3 +1,7 @@
+html {
+    font-size: 100%;
+}
+
 body {
     background-color: lightsteelblue;
     box-sizing: border-box;
@@ -11,9 +15,9 @@ main {
     border: whitesmoke solid 0.25px;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 120px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-top: 7.5rem;
+    margin-bottom: 0.625rem;
+    padding-bottom: 0.625rem;
 }
 
 #main-article {
@@ -24,7 +28,7 @@ main {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(47, 47, 180);
-    font-size: 25px;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -33,7 +37,7 @@ h1:hover {
 }
 
 .bilder {
-    height: 500px;
+    height: 31.25rem;
     display: flex;
 }
 
@@ -60,25 +64,26 @@ h1:hover {
 
 .sub-articles {
     position: relative;
-    height: 200px;
+    margin: 0.5rem;
+    height: 12.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding: 10px;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    grid-gap: 1.25rem;
 }
 
 .politikk, .medlem, .erna {
     position: relative;
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .sub-articles img {
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
     object-fit: cover;
+    background-color: whiteS;
 }
 
 .politikk-overlay {
@@ -90,9 +95,8 @@ h1:hover {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 10px;
     color: rgb(47, 47, 180);
-    background-image: linear-gradient(transparent, transparent 40%, whitesmoke);
+    background-image: linear-gradient(transparent, transparent 30%, whitesmoke);
     overflow: hidden;
 }
 
@@ -105,9 +109,8 @@ h1:hover {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 10px;
     color: rgb(47, 47, 180);
-    background-image: linear-gradient(transparent, transparent 40%, whitesmoke);
+    background-image: linear-gradient(transparent, transparent 30%, whitesmoke);
     overflow: hidden;
 }
 
@@ -120,10 +123,13 @@ h1:hover {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 10px;
     color: rgb(47, 47, 180);
-    background-image: linear-gradient(transparent, transparent 40%, whitesmoke);
+    background-image: linear-gradient(transparent, transparent 30%, whitesmoke);
     overflow: hidden;
+}
+
+h2 {
+    padding-left: 0.5rem;
 }
 
 .politikk-overlay:hover, .medlem-overlay:hover, .erna-overlay:hover {

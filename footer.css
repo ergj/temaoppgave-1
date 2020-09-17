@@ -1,3 +1,7 @@
+html {
+    font-size: 100%;
+}
+
 footer {
     background: rgb(47, 47, 180);
     color: whitesmoke;
@@ -17,7 +21,7 @@ footer {
 
 .footer-info, .footer-meny, .footer-socials {
     flex: 1;
-    padding: 10px;
+    padding: 0.6rem;
     object-fit: fill;
     display: grid;
     grid-auto-columns: auto;
