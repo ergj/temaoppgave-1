@@ -19,6 +19,18 @@ main {
     padding-bottom: 0.625rem;
 }
 
+h1, h2 {
+    color: rgb(47, 47, 180);
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
 form {
     background-color: snow;
     border: 1px solid black;
@@ -58,18 +70,6 @@ form div {
 
 article {
     padding-left: 0.625rem;
-}
-
-h1, h2 {
-    color: rgb(47, 47, 180);
-}
-
-h1 {
-    font-size: 3.2rem;
-}
-
-h2 {
-    font-size: 1.6rem;
 }
 
 .erna-bli-medlem {
